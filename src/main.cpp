@@ -1,6 +1,6 @@
 #include <print>
 
-#include <QApplication>
+#include <QCoreApplication>
 #include <QCanBus>
 #include <QList>
 #include <QString>
@@ -46,7 +46,7 @@ namespace Can{
 
 int main(int argc, char**argv){
     std::println("{}()", __FUNCTION__);
-    QApplication app(argc, argv);
+    QCoreApplication app(argc, argv);
 
     Can::listPlugins();
     Can::listDevices();
